@@ -13,6 +13,7 @@ Entrada de Parâmetros via CLI:
 Após realizadas as requisições estipuladas será mostrado um relatário com os dados coletados.
 Relatório neste formato:
 
+<pre>
 ------------------------------------------------------------------
                     STRESS TEST REPORT
 ------------------------------------------------------------------
@@ -34,7 +35,7 @@ Dados por Códigos http:
    5xx Erro no Servidor   ---> {Quantidade Http code 5xx}
 
 Requisições com Erro : {Quantidade de requisições que deram erro}
-
+</pre>
 
 
 Para rodar o sistema temos duas formas de rodar:
@@ -60,6 +61,7 @@ EXEMPLOS utilizando docker run:
 1 - docker run -it amichelin/stress:1.0 --url=http://www.webcontinental.com.br --requests=1000
 
 Resposta:
+<pre>
 ------------------------------------------------------------------
                     STRESS TEST REPORT
 ------------------------------------------------------------------
@@ -81,11 +83,12 @@ Dados por Códigos http:
    5xx Erro no Servidor   ---> 0
 
 Requisições com Erro : 0
-
+</pre>
 
     2 - docker run -it amichelin/stress:1.0 --url=http://www.webcontinental.com.br --requests=1000 --concurrency=10
 
     Resposta:
+<pre>
 ------------------------------------------------------------------
                     STRESS TEST REPORT
 ------------------------------------------------------------------
@@ -107,5 +110,5 @@ Dados por Códigos http:
    5xx Erro no Servidor   ---> 0
 
 Requisições com Erro : 0
-
+</pre>
 Na pasta do projeto tem duas imagens evidenciando os resultados
